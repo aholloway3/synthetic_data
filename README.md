@@ -1,5 +1,14 @@
 # Synthetic Data Generation Workflow
 
+# Synthetic Patient Data Generator
+
+## What
+Python script that generates realistic-but-fake patient data for SQL testing and pipeline development.
+
+## Why
+Real patient data can't be shared. This lets me demonstrate healthcare data work without PHI.
+
+## How
 ## Steps:
 1. Create Python script with pandas/numpy
 2. Generate realistic patient data with:
