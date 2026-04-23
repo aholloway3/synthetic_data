@@ -14,7 +14,7 @@ Real patient data can't be shared. This lets me demonstrate healthcare data work
     - Clinical measurement (BP, cholesterol)
     - Treatment groups and outcomes
 3. Saved to local folder
-4. Verified data quality in LibraOffice Calc
+4. Verified data quality in LibreOffice Calc
 
 ## Commands used:
 ```bash
