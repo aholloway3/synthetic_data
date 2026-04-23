@@ -23,6 +23,16 @@ source venv/bin/activate
 pip install pandas numpy
 python scripts/data_generation/generate_patient_data.py
 ```
+## Output
+Creates `patient_data.csv` with: patient_id, age, gender, diagnosis_code, admission_date, discharge_date.
+
+## Schema
+- patient_id: unique integer
+- age: 18-95
+- gender: M/F/other
+- diagnosis_code: ICD-10 format (I10, E11, etc.)
+- admission_date: random date in 2023-2024
+- discharge_date: admission_date + random length of stay
 
 ## Idea for Next Steps:
 - Write SQL queries to analyze this data
