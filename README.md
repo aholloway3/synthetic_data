@@ -21,7 +21,7 @@ Real patient data can't be shared. This lets me demonstrate healthcare data work
 python3 -m venv venv
 source venv/bin/activate
 pip install pandas numpy
-python scripts/data_generation/generate_patient_data.py
+python generate_patient_data.py
 ```
 ## Output
 Creates `patient_data.csv` with: patient_id, age, gender, diagnosis_code, admission_date, discharge_date.
