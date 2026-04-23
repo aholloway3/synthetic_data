@@ -16,7 +16,7 @@ Real claims data cannot be shared due to PHI restrictions. Synthetic data allows
 
 ```bash
 pip install pandas numpy matplotlib faker
-python generate_patient_data.py
+python generate_claims.py
 ```
 ## Sample Output
 
@@ -24,7 +24,7 @@ python generate_patient_data.py
 - Plot: Bar chart of denial reasons (saves or displays)
 
 ## Files
-- `generate_patient_data.py` — Main script
+- `generate_claims.py` — Main script
 - `requirements.txt` — Dependencies
 
 ## Real-World Application
