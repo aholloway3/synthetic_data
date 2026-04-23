@@ -1,40 +1,31 @@
-# Synthetic Patient Data Generator
+# Synthetic Claims Data Generator
 
 ## What
-Python script that generates realistic-but-fake patient data for SQL testing and pipeline development.
+Python script that generates realistic healthcare claims data for analysis, denial trend identification, and fraud risk scoring.
 
 ## Why
-Real patient data can't be shared. This lets me demonstrate healthcare data work without PHI.
+Real claims data cannot be shared due to PHI restrictions. Synthetic data allows demonstration of healthcare analytics techniques without privacy concerns.
 
-## How
-## Steps:
-1. Create Python script with pandas/numpy
-2. Generate realistic patient data with:
-    - Demographic (age, gender)
-    - Clinical measurement (BP, cholesterol)
-    - Treatment groups and outcomes
-3. Saved to local folder
-4. Verified data quality in LibreOffice Calc
+## Features
+- Generates 100+ claims with realistic fields (payor, amount, denial reason, provider, patient)
+- Includes denial rate analysis by payor
+- Calculates fraud risk scores based on amount and reason
+- Produces visualization of top denial reasons
 
-## Commands used:
+## How to Run
+
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install pandas numpy
-python generate_patient_data.py
+pip install pandas numpy matplotlib faker
+python generate_claims.py
 ```
-## Output
-Creates `patient_data.csv` with: patient_id, age, gender, diagnosis_code, admission_date, discharge_date.
+## Sample Output
 
-## Schema
-- patient_id: unique integer
-- age: 18-95
-- gender: M/F/other
-- diagnosis_code: ICD-10 format (I10, E11, etc.)
-- admission_date: random date in 2023-2024
-- discharge_date: admission_date + random length of stay
+- Console output: Summary stats, denial rates, fraud risk claims
+- Plot: Bar chart of denial reasons (saves or displays)
 
-## Idea for Next Steps:
-- Write SQL queries to analyze this data
-- Create more complex synthetic datasets
-- Build a complete analytics pipeline
+## Files
+- `generate_claims.py` — Main script
+- `requirements.txt` — Dependencies
+
+## Real-World Application
+This mimics real claims denial analysis workflows used in revenue cycle management and healthcare analytics.
