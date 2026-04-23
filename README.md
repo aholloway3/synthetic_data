@@ -1,5 +1,3 @@
-# Synthetic Data Generation Workflow
-
 # Synthetic Patient Data Generator
 
 ## What
